@@ -1,1 +1,259 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #faf7ff;
+            color: #35234a;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #68428b;
+            padding: 22px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e5d4ff;
+        }
+
+        /* SECTIONS */
+        section {
+            min-height: 85vh;
+            padding: 80px 20px;
+            text-align: center;
+            scroll-margin-top: 55px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #68428b;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 15px auto;
+            max-width: 550px;
+        }
+
+        /* HOME */
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #eee5f8;
+        }
+
+        .home h1 {
+            font-size: 38px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            margin: 15px;
+            background: #68428b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #8d69b2;
+        }
+
+        /* ABOUT ME */
+        .about {
+            background: white;
+        }
+
+        .profile {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #cbb4e6;
+            margin: 25px;
+        }
+
+        .about-content {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #eee5f8;
+        }
+
+        .contact-info {
+            background: white;
+            max-width: 450px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #d9c6ee;
+        }
+
+        .contact-info a {
+            color: #68428b;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #68428b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                margin: 5px;
+                font-size: 11px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#contact">CONTACT ME</a>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="home">
+
+        <h1>WELCOME TO MY WEBSITE</h1>
+
+        <p>
+            Hello! Welcome to my personal website.
+            Get to know more about me, my interests,
+            and my journey.
+        </p>
+
+        <a href="#about" class="btn">EXPLORE MORE</a>
+
+    </section>
+
+    <!-- ABOUT ME PAGE -->
+    <section id="about" class="about">
+
+        <h1>ABOUT ME</h1>
+
+        <img src="profile.jpg"
+             alt="My Profile Picture"
+             class="profile">
+
+        <div class="about-content">
+
+            <p>
+                Hello! My name is [YOUR NAME].
+                Welcome to my personal website!
+            </p>
+
+            <p>
+                I am a student who loves learning
+                new things and exploring different
+                experiences.
+            </p>
+
+            <p>
+                My hobbies are [YOUR HOBBIES].
+                My dreams and goals are to finish
+                my studies and build a better future.
+            </p>
+
+        </div>
+
+        <a href="#home" class="btn">BACK TO HOME</a>
+
+    </section>
+
+    <!-- CONTACT ME PAGE -->
+    <section id="contact" class="contact">
+
+        <h1>CONTACT ME</h1>
+
+        <p>
+            Thank you for visiting my website!
+            You can connect with me through:
+        </p>
+
+        <div class="contact-info">
+
+            <p>Email: [YOUR EMAIL]</p>
+
+            <p>
+                Facebook:
+                <a href="https://facebook.com/"
+                   target="_blank">
+                   My Facebook
+                </a>
+            </p>
+
+            <p>
+                Instagram:
+                <a href="https://instagram.com/"
+                   target="_blank">
+                   My Instagram
+                </a>
+            </p>
+
+        </div>
+
+        <a href="#home" class="btn">BACK TO HOME</a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>My Personal Website © 2026</p>
+    </footer>
+
+</body>
+</html>
+
