@@ -4,257 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miles | Personal Website</title>
+    <title>Home | Miles Sanglay</title>
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5efff;
-            color: #333;
+            background-color: #f8f5ff;
+            color: #352044;
+        }
+
+        header {
+            background-color: #7042a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 27px;
         }
 
         nav {
-            background-color: #7041a6;
-            padding: 18px;
+            background-color: white;
+            padding: 15px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            margin: 0 12px;
+            color: #7042a1;
             font-weight: bold;
-        }
-
-        section {
-            min-height: 90vh;
-            padding: 70px 20px;
-            text-align: center;
+            margin: 10px;
         }
 
         .home {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #eee3ff;
+            text-align: center;
+            padding: 70px 20px;
         }
 
-        .home h1 {
-            color: #7041a6;
-            font-size: 42px;
+        .home h2 {
+            font-size: 32px;
+            color: #7042a1;
             margin-bottom: 15px;
         }
 
         .home p {
-            font-size: 18px;
+            font-size: 17px;
+            line-height: 1.7;
             margin-bottom: 25px;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: #7041a6;
+        .home button {
+            background-color: #7042a1;
             color: white;
+            border: none;
             padding: 12px 25px;
             border-radius: 25px;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        .about {
-            background-color: white;
-        }
-
-        .about h1 {
-            color: #7041a6;
-            margin-bottom: 10px;
-        }
-
-        .profile {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #c9a9f2;
-            margin: 25px auto;
-        }
-
-        .about-content {
-            max-width: 700px;
-            margin: auto;
-            text-align: left;
-        }
-
-        .about-content h2 {
-            color: #7041a6;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        .about-content p,
-        .about-content li {
-            line-height: 1.8;
             font-size: 16px;
         }
 
-        .about-content ul {
-            padding-left: 25px;
-        }
-
-        .contact {
-            background-color: #eee3ff;
-        }
-
-        .contact h1 {
-            color: #7041a6;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            margin: 15px 0;
-        }
-
         footer {
-            background-color: #7041a6;
+            background-color: #7042a1;
             color: white;
             text-align: center;
-            padding: 18px;
-        }
-
-        @media (max-width: 480px) {
-            nav a {
-                margin: 0 6px;
-                font-size: 13px;
-            }
-
-            .home h1 {
-                font-size: 32px;
-            }
+            padding: 15px;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+    <header>
+        <h1>HI, I'M MILES!</h1>
+        <p>Welcome to my personal website ♡</p>
+    </header>
+
     <nav>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#contact">CONTACT ME</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
     </nav>
 
-    <!-- HOME PAGE -->
-    <section id="home" class="home">
+    <section class="home">
+        <h2>Welcome to My Website!</h2>
 
-        <h1>HI, I'M MILES!</h1>
+        <p>
+            Hello! Welcome to my personal space.
+            This website is all about me, my interests,
+            hobbies, experiences, and dreams.
+            Feel free to explore and get to know me better!
+        </p>
 
-        <p>Welcome to my personal website ♡</p>
-
-        <p>Get to know more about me, my interests, and my dreams.</p>
-
-        <a href="#about" class="btn">EXPLORE MORE</a>
-
+        <button onclick="location.href='about.html'">
+            Get to Know Me
+        </button>
     </section>
 
-    <!-- ABOUT ME PAGE -->
-    <section id="about" class="about">
-
-        <h1>ABOUT ME</h1>
-
-        <p>Get to know the person behind this website ♡</p>
-
-        <img src="profile.jpg"
-             alt="Miles' Profile Picture"
-             class="profile">
-
-        <div class="about-content">
-
-            <h2>ABOUT ME</h2>
-            <p>
-                Hello! My name is Miles P. Sanglay.
-                I am currently a Grade 9 student living
-                in Davao City, Philippines. I am the
-                eldest child, the first daughter, niece,
-                and granddaughter, and the only girl
-                in our family.
-            </p>
-
-            <h2>MY HOBBIES</h2>
-            <p>
-                I enjoy listening to music, cooking,
-                and reading AU stories on TikTok.
-                These activities allow me to relax
-                and enjoy my free time.
-            </p>
-
-            <h2>MY INTERESTS</h2>
-            <p>
-                I am currently interested in the
-                medical field and volunteer work,
-                especially helping people who need
-                care and assistance.
-            </p>
-
-            <h2>MY DREAMS AND GOALS</h2>
-            <p>
-                My dream is to graduate, become a
-                Licensed Professional Teacher (LPT),
-                and achieve financial stability.
-                I also dream of traveling to my
-                favorite country with my family.
-            </p>
-
-            <h2>MY ACHIEVEMENTS</h2>
-            <ul>
-                <li>Accepted as a member of the DERFV Volunteers team.</li>
-                <li>Completed responder and survival training.</li>
-                <li>Gained knowledge and experience in basic first aid and emergency response.</li>
-                <li>Participated in school activities, projects, and group performances.</li>
-            </ul>
-
-            <p>
-                These experiences have helped me become
-                more responsible, confident, and dedicated
-                to serving others.
-            </p>
-
-        </div>
-
-        <a href="#home" class="btn">BACK TO HOME</a>
-
-    </section>
-
-    <!-- CONTACT ME PAGE -->
-    <section id="contact" class="contact">
-
-        <h1>CONTACT ME</h1>
-
-        <p>Thank you for visiting my personal website! ♡</p>
-
-        <p>You can connect with me through my social media accounts.</p>
-
-        <!-- Add your public social media link here if you want -->
-
-        <a href="#home" class="btn">BACK TO HOME</a>
-
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Miles P. Sanglay | Personal Website ♡</p>
+        <p>© 2026 Miles P. Sanglay | All Rights Reserved</p>
     </footer>
 
 </body>
 </html>
-
-
